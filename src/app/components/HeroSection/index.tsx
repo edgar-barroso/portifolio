@@ -10,7 +10,7 @@ export function HeroSection() {
       <div className="absolute -z-10 h-[100vh] w-[1px] bg-[--background-light] left-3/4 " />
       
       <div className="flex flex-row justify-center items-center pt-10 gap-20">
-        <div className="flex flex-col gap-6 md:max-w-[40%] max-md:flex-0 max-md:max-w-[100%]">
+        <div className="flex flex-col gap-6 max-md:items-center max-md:text-center md:max-w-[40%] ">
           <div className="flex flex-row items-center gap-2 text-gray-500">
             <div className="w-6 bg-gray-500 h-[2px]"></div>
             <h2 className="text-xl font-semibold">HELLO</h2>
@@ -34,7 +34,7 @@ export function HeroSection() {
             BAIXAR CURRÍCULO
           </motion.button>
         </div>
-        <div className="w-[400px] h-[400px] max-md:invisible rounded-full shadow-[--foreground] shadow-xl bg-[--foreground-light] bg-[url('/banner-2.png')] bg-cover" />
+        <div className="w-[400px] h-[400px] max-md:hidden rounded-full shadow-[--foreground] shadow-xl bg-[--foreground-light] bg-[url('/banner-2.png')] bg-cover" />
       </div>
       <div className="flex flex-row gap-5 mt-10 mb-14">
         {socialMedia.map((item) => (

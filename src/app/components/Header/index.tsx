@@ -9,7 +9,7 @@ export function Header() {
   const [lang] = useState("pt-br");
   return (
     <header className="flex flex-row h-28 justify-between items-center px-[5vw] font-bold text-sm tracking-widest ">
-      <Link href={"/"} className="font-extrabold text-3xl -tracking-wide max-md:invisible max-md:w-0">
+      <Link href={"/"} className="font-extrabold text-3xl -tracking-wide max-md:hidden">
         EDGAR
       </Link>
       <div className="flex flex-row gap-10 text-gray-600 ">
