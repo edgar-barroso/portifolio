@@ -8,7 +8,7 @@ export function Header() {
   const pathname = usePathname();
   const [lang] = useState("pt-br");
   return (
-    <header className="flex flex-row h-28 justify-between items-center px-[5vw] font-bold text-sm tracking-widest">
+    <header className="flex flex-row h-28 justify-between items-center px-[5vw] font-bold text-sm tracking-widest ">
       <Link href={"/"} className="font-extrabold text-3xl -tracking-wide max-md:invisible max-md:w-0">
         EDGAR
       </Link>
@@ -23,7 +23,7 @@ export function Header() {
           </Link>
         ))}
       </div>
-      <div className="flex flex-row text-gray-600 gap-5  max-md:invisible max-md:w-0">
+      <div className="flex flex-row text-gray-600 gap-5 max-md:hidden">
         {languages.map((item) => (
           <button
             key={item.id}
