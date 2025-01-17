@@ -7,27 +7,35 @@ import { useState } from "react";
 export function Header() {
   const pathname = usePathname();
   const [lang] = useState("pt-br");
+
   return (
-    <header className="flex flex-row h-28 justify-between items-center px-[5vw] font-bold text-sm tracking-widest ">
-      <Link href={"/"} className="font-extrabold text-3xl -tracking-wide max-md:hidden">
+    <header className="left-0 top-0 absolute flex flex-row h-28 w-full justify-between items-center font-bold text-sm tracking-widest px-5 md:px-10">
+      {/* Logo */}
+      <Link href={"/"} className="font-extrabold text-3xl -tracking-wide hidden md:block">
         EDGAR
       </Link>
-      <div className="flex flex-row gap-10 text-gray-600 ">
+      {/* Navigation Links */}
+      <div className="flex flex-row gap-5 md:gap-10 text-gray-600">
         {routes.map((item) => (
           <Link
             key={item.href}
             href={item.href}
-            className={`${pathname === item.href && "text-[--foreground]"}`}
+            className={`${
+              pathname === item.href && "text-[--foreground]"
+            } hover:text-[--foreground]`}
           >
             {item.name.toUpperCase()}
           </Link>
         ))}
       </div>
-      <div className="flex flex-row text-gray-600 gap-5 max-md:hidden">
+      {/* Language Switcher */}
+      <div className="flex flex-row text-gray-600 gap-3 md:gap-5 max-md:hidden md:flex">
         {languages.map((item) => (
           <button
             key={item.id}
-            className={`${lang === item.id && "text-[--foreground]"}`}
+            className={`${
+              lang === item.id && "text-[--foreground]"
+            } hover:text-[--foreground]`}
           >
             {item.name.toUpperCase()}
           </button>
@@ -36,4 +44,3 @@ export function Header() {
     </header>
   );
 }
-
