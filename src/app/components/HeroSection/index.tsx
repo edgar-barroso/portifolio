@@ -9,9 +9,9 @@ export function HeroSection() {
         <div className="flex flex-col gap-6 max-md:items-center max-md:text-center md:max-w-[40%] ">
           <div className="flex flex-row items-center gap-2 text-gray-500">
             <div className="w-6 bg-gray-500 h-[2px]"></div>
-            <h2 className="text-xl font-semibold">HELLO</h2>
+            <h2 className="text-2xl font-semibold">HELLO</h2>
           </div>
-          <h1 className="text-5xl font-bold">
+          <h1 className="text-6xl font-bold text-center">
             {"I'm"} <span className="text-[--foreground]">Edgar</span> Barroso
           </h1>
         </div>

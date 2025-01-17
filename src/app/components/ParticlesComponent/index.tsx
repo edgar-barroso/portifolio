@@ -1,9 +1,25 @@
 import { useEffect, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
-import { loadSlim } from "@tsparticles/slim"; // Slim version to reduce bundle size
+import { loadSlim } from "@tsparticles/slim"; 
 
 export function ParticlesComponent() {
   const [init, setInit] = useState(false);
+  const [theme, setTheme] = useState("light");
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+    setTheme(mediaQuery.matches ? "dark" : "light");
+
+    const handleThemeChange = (e:MediaQueryListEvent) => {
+      setTheme(e.matches ? "dark" : "light");
+    };
+
+    mediaQuery.addEventListener("change", handleThemeChange);
+
+    return () => {
+      mediaQuery.removeEventListener("change", handleThemeChange);
+    };
+  }, []);
 
   useEffect(() => {
     initParticlesEngine(async (engine) => {
@@ -14,62 +30,58 @@ export function ParticlesComponent() {
   }, []);
 
   return (
-    <div className="absolute w-full h-full -z-20">
+    <div className="absolute w-full h-full -z-20 ">
       {init && (
         <Particles
           id="tsparticles"
           options={{
-            fpsLimit: 75, // Limit the FPS to 120 for better performance
+            fpsLimit: 75, // Limit FPS for performance
             interactivity: {
-             
               modes: {
-                push: {
-                  quantity: 4, // Number of particles added on click
-                },
                 repulse: {
-                  distance: 200, // Repulse distance
-                  duration: 0.4, // Duration of repulsion effect
+                  distance: 200,
+                  duration: 0.4,
                 },
               },
             },
             particles: {
               color: {
-                value: "#ffffff", // Particle color
+                value: theme === "dark" ? "#ffffff" : "#000000", // Dynamic particle color
               },
               links: {
-                color: "#ffffff", // Line color
-                distance: 150, // Line distance
-                enable: true, // Enable line linking
-                opacity: 0.5, // Line opacity
-                width: 1, // Line width
+                color: theme === "dark" ? "#ffffff" : "#000000", // Dynamic link color
+                distance: 150,
+                enable: true,
+                opacity: 0.5,
+                width: 1,
               },
               move: {
                 direction: "none",
                 enable: true,
                 outModes: {
-                  default: "bounce", // Bounce particles when hitting edges
+                  default: "bounce",
                 },
                 random: false,
-                speed: 3, // Particle speed
+                speed: 1,
                 straight: false,
               },
               number: {
                 density: {
                   enable: true,
                 },
-                value: 160, // Total number of particles
+                value: 160,
               },
               opacity: {
-                value: 0.5, // Particle opacity
+                value: 0.5,
               },
               shape: {
-                type: "circle", // Shape of the particles
+                type: "circle",
               },
               size: {
-                value: { min: 1, max: 5 }, // Random size range for particles
+                value: { min: 1, max: 5 },
               },
             },
-            detectRetina: true, // Enable retina detection
+            detectRetina: true,
           }}
         />
       )}
