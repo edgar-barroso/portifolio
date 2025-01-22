@@ -1,11 +1,11 @@
 "use client";
 import Link from "next/link";
 import { socialMedia } from "@/constants";
-import { ParticlesComponent } from "../ParticlesComponent";
+import { RandomCirclesAndLines } from "../RandomCirclesAndLines";
 export function HeroSection() {
   return (
     <section className="relative flex flex-col items-center justify-center h-[100vh]">
-      <ParticlesComponent />
+      <RandomCirclesAndLines />
         <div className="flex flex-col gap-6 max-md:items-center max-md:text-center md:max-w-[40%] ">
           <div className="flex flex-row items-center gap-2 text-gray-500">
             <div className="w-6 bg-gray-500 h-[2px]"></div>

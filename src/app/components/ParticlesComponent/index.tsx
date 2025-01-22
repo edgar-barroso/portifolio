@@ -1,3 +1,4 @@
+"use client"
 import { useEffect, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim"; 
@@ -30,12 +31,12 @@ export function ParticlesComponent() {
   }, []);
 
   return (
-    <div className="absolute w-full h-full -z-20 ">
+    <div className="absolute w-full -z-20 ">
       {init && (
         <Particles
           id="tsparticles"
           options={{
-            fpsLimit: 75, // Limit FPS for performance
+            fpsLimit: 75,
             interactivity: {
               modes: {
                 repulse: {
@@ -46,10 +47,10 @@ export function ParticlesComponent() {
             },
             particles: {
               color: {
-                value: theme === "dark" ? "#ffffff" : "#000000", // Dynamic particle color
+                value: theme === "dark" ? "#ffffff" : "#000000",
               },
               links: {
-                color: theme === "dark" ? "#ffffff" : "#000000", // Dynamic link color
+                color: theme === "dark" ? "#ffffff" : "#000000",
                 distance: 150,
                 enable: true,
                 opacity: 0.5,

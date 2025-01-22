@@ -1,6 +1,6 @@
 export function Footer() {
     return (
-        <footer className="h-24 bg-[--background-dark] flex flex-col items-center justify-center text-gray-600 text-sm">
+        <footer className=" h-24 bg-[--background-dark] flex flex-col items-center justify-center text-gray-600 text-sm">
             <div className="flex space-x-4 mb-2">
                 <a 
                     href="https://github.com/seu-usuario" 
