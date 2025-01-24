@@ -87,9 +87,8 @@ export const RandomCirclesAndLines = () => {
     render();
 
     const handleResize = () => {
-      canvas.width = window.innerWidth * window.devicePixelRatio;
-      canvas.height = window.innerHeight * window.devicePixelRatio;
-      ctx.scale(window.devicePixelRatio, window.devicePixelRatio);
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
     };
     window.addEventListener("resize", handleResize);
 
@@ -100,7 +99,7 @@ export const RandomCirclesAndLines = () => {
 
   return (
     <canvas
-      className="blur-[3px] absolute left-0 top-0 -z-30"
+      className="blur-[2px] absolute left-0 top-0 -z-30"
       ref={canvasRef}
       style={{ display: "block", margin: 0, overflow: "hidden" }}
     />
