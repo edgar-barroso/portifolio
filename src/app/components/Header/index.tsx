@@ -10,9 +10,9 @@ export function Header() {
 
   return (
     <header className="left-0 top-0 z-10 absolute flex flex-row h-28 w-full justify-between items-center font-bold text-sm tracking-widest px-5 md:px-10">
-      <Link href={"/"} className="font-extrabold text-3xl -tracking-wide hidden md:block">
+      <p className="font-extrabold text-3xl -tracking-wide hidden md:block">
         EDGAR
-      </Link>
+      </p>
       <div className="flex flex-row gap-5 md:gap-10 text-gray-600">
         {routes.map((item) => (
           <Link

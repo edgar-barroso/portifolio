@@ -1,11 +1,9 @@
-import { CiInstagram, CiFacebook, CiTwitter } from "react-icons/ci";
+import { CiInstagram } from "react-icons/ci";
 import { FaGithub } from "react-icons/fa";
 
 export const socialMedia = [
-  { href: "1", icon: <CiInstagram size={25} /> },
-  { href: "2", icon: <CiFacebook size={25} /> },
-  { href: "3", icon: <CiTwitter size={25} /> },
-  { href: "4", icon: <FaGithub size={25} /> },
+  { href: "https://www.instagram.com/edgar_barrosoneto/", icon: <CiInstagram size={25} /> },
+  { href: "https://github.com/edgar-barroso", icon: <FaGithub size={25} /> },
 ];
 
 export const expertises = [
@@ -74,7 +72,7 @@ export const experiences = [
   },
 ];
 
-export const projects = [
+export const projectsFront = [
   {
     img: "/netflix.png",
     title: "Netflix clone",
@@ -97,18 +95,18 @@ export const projects = [
     link: "https://thisfollow-gto5zrg9z-edgarbarrosos-projects.vercel.app/",
   },
   {
-    img: "/tools-fttx.png",
-    title: "FTTX tools",
+    img: "/nutri-lorenna.png",
+    title: "Nutricionista Lorenna",
     description:
-      "Um site especializado em ferramentas para manipular projetos FTTx, oferecendo suporte para arquivos KML e KMZ. Ideal para profissionais que trabalham com redes de fibra óptica.",
-    link: "https://netflix-nine-plum.vercel.app/",
+      "Uma Landing Page de vendas de um curso de emagrecimento, da nutricionista Lorenna Lizot.",
+    link: "https://www.nutrilorennalizot.com/",
   },
   {
     img: "/fluxograma-fttx.png",
     title: "Fluxograma FTTX",
     description:
       "Um site para criação de fluxogramas personalizados voltados para projetos FTTx. Com uma interface intuitiva e ferramentas interativas, permite diagramar redes de fibra óptica de forma prática e organizada.",
-    link: "https://netflix-nine-plum.vercel.app/",
+    link: "https://fluxograma-fttx.vercel.app/",
   },
   {
     img: "/portifolio.png",
@@ -117,12 +115,52 @@ export const projects = [
       "Meu portfólio profissional, apresentando projetos desenvolvidos, habilidades técnicas e experiências em desenvolvimento web. Explore exemplos práticos de aplicações, interfaces modernas e soluções criativas que demonstram minha paixão por tecnologia e design.",
     link: "/",
   },
+
+
+];
+
+export const projectsBack = [
   {
-    img: "/forca.png",
-    title: "Jogo da forca",
+    img: "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/nestjs/nestjs-original.svg",
+    title: "starter-backend",
     description:
-      "Jogo da forca simples desenvolvido com React e Three.js, trazendo uma experiência interativa e visualmente atraente. Utiliza gráficos 3D para tornar o jogo mais dinâmico e divertido, permitindo ao usuário adivinhar palavras enquanto interage com uma interface envolvente e responsiva.",
-    link: "https://jogo-da-forca-vert-nine.vercel.app/",
+      "back-end para iniciar projetos com nest",
+    link: "https://github.com/edgar-barroso/starter-backend",
+  },
+  {
+    img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",
+    title: "Instagram Profile Picture API",
+    description:
+      "Esta API Python permite que os usuários recuperem o URL de uma imagem de perfil do Instagram fornecendo um nome de usuário.",
+    link: "https://github.com/edgar-barroso/instagram-profile-api",
+  },
+  {
+    img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-plain.svg",
+    title: "Encurtador de URL",
+    description:
+      "API para servico encurtador de URL",
+    link: "https://github.com/edgar-barroso/url-shortener-api",
+  },
+  {
+    img: "/picpay.png",
+    title: "Desafio Back-end PicPay",
+    description:
+      "Desafio Back-end lançado pelo PicPay para recrutar colaboradores",
+    link: "https://github.com/edgar-barroso/picpay-desafio-backend",
+  },
+  {
+    img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-plain.svg",
+    title: "E-commerce API",
+    description:
+      "Back-end para um e-commerce desenvolvido no curso do Rodrigo Branas utilizando Clen Architecture, DDD, TDD, SOLID.",
+    link: "https://github.com/edgar-barroso/e-commerce-api",
+  },
+  {
+    img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-plain.svg",
+    title: "Web Chat API",
+    description:
+      "Back-end para chat web, utilizando websocket, TDD, DDD, SOLID",
+    link: "https://github.com/edgar-barroso/web-chat-api",
   },
 
 ];
@@ -130,7 +168,7 @@ export const projects = [
 export const routes = [
   { href: "/", name: "home" },
   // { href: "/about", name: "about" },
-  { href: "/contact", name: "contact" },
+  { href: "https://wa.me/5588998029216", name: "contact" },
 ];
 
 export const languages = [
