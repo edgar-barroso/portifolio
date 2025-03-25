@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 export function ProjectsSection() {
   return (
-    <section className="py-10 px-[15vw] bg-[--background-dark]" id="projects">
+    <section className="relative py-10 px-[15vw] bg-[--background-dark]" id="projects">
       <div className="flex flex-col gap-10 justify-center items-center">
         <h2 className="text-4xl font-bold">Projetos</h2>
         <p className="text-sm text-center">

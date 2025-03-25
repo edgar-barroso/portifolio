@@ -1,3 +1,4 @@
+"use client"
 import { educations, experiences } from "@/constants";
 import { CiMapPin } from "react-icons/ci";
 import { RiVipCrownLine, RiShoppingBagFill } from "react-icons/ri";
@@ -25,7 +26,7 @@ function ResumeItem({ interval, title, description, location }: ResumeItemProps)
 
 export function ResumeSection() {
   return (
-    <section className="py-10 px-[15vw]">
+    <section className="relative py-10 px-[15vw]">
       <div className="flex flex-col gap-10 justify-center items-center">
         <h2 className="text-4xl font-bold">Trajetória</h2>
         <p className="text-sm text-center">

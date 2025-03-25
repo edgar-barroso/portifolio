@@ -99,7 +99,7 @@ export const RandomCirclesAndLines = () => {
 
   return (
     <canvas
-      className="blur-[2px] absolute left-0 top-0 -z-30"
+      className=" absolute left-0 top-0 -z-30"
       ref={canvasRef}
       style={{ display: "block", margin: 0, overflow: "hidden" }}
     />

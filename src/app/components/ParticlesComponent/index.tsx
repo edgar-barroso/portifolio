@@ -31,7 +31,7 @@ export function ParticlesComponent() {
   }, []);
 
   return (
-    <div className="absolute w-full -z-20 ">
+    <div className="absolute w-full -z-20">
       {init && (
         <Particles
           id="tsparticles"

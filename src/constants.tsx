@@ -124,13 +124,7 @@ export const projects = [
       "Jogo da forca simples desenvolvido com React e Three.js, trazendo uma experiência interativa e visualmente atraente. Utiliza gráficos 3D para tornar o jogo mais dinâmico e divertido, permitindo ao usuário adivinhar palavras enquanto interage com uma interface envolvente e responsiva.",
     link: "https://jogo-da-forca-vert-nine.vercel.app/",
   },
-  {
-    img: "/magazine-luiza.png",
-    title: "Magazine luiza clone",
-    description:
-      "Clone da página de vendas do Magazine Luiza, recriado com foco em design responsivo e funcionalidade. O projeto imita a interface de compra online, com seções de produtos, descrições detalhadas, avaliações de clientes e layout otimizado para uma experiência de compra fluída e intuitiva.",
-    link: "https://product-page-magalu-clone.vercel.app",
-  },
+
 ];
 
 export const routes = [
