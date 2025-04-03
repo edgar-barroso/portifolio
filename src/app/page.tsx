@@ -6,7 +6,7 @@ export default function Home() {
   
 
   return (
-    <main className="text-gray-600">
+    <main>
       <HeroSection/>
       <ExpertiseSection/>
       <ResumeSection/>
