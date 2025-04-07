@@ -25,7 +25,7 @@ export function Footer() {
                     Contato
                 </a>
             </div>
-            <p className="text-gray-500">
+            <p className="text-gray-500 text-center">
                 © {new Date().getFullYear()} José Edgar Barroso Neto. Todos os direitos reservados.
             </p>
         </footer>
