@@ -1,5 +1,6 @@
-import { CiInstagram } from "react-icons/ci";
 import { FaGithub } from "react-icons/fa";
+import { BiBriefcaseAlt } from "react-icons/bi";
+import { CiInstagram } from "react-icons/ci";
 
 export const socialMedia = [
   { href: "https://www.instagram.com/edgar_barrosoneto/", icon: <CiInstagram size={25} /> },
@@ -11,19 +12,19 @@ export const expertises = [
     title: "Desenvolvimento Front-End",
     description:
       "Especialista em React e Next.js, com experiência na criação de interfaces de usuário otimizadas, responsivas e acessíveis. Uso avançado de TailwindCSS para estilização eficiente.",
-    icon: <CiInstagram size={35} />,
+    icon: <BiBriefcaseAlt size={35} />,
   },
   {
     title: "Desenvolvimento Back-End",
     description:
       "Proficiente em Node.js com integração de bancos de dados como PostgreSQL, utilizando Prisma ORM para modelagem e manipulação eficiente de dados.",
-    icon: <CiInstagram size={35} />,
+    icon: <BiBriefcaseAlt size={35} />,
   },
   {
     title: "Arquitetura de Software",
     description:
       "Experiência em projetar arquiteturas escaláveis e de alta performance, garantindo a qualidade de código com boas práticas, testes automatizados e uso de TypeScript.",
-    icon: <CiInstagram size={35} />,
+    icon: <BiBriefcaseAlt size={35} />,
   },
 ];
 
