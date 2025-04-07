@@ -28,27 +28,19 @@ const item = {
   },
 };
 
-const techItem = {
-  hidden: { opacity: 0, scale: 0.5 },
-  visible: {
-    opacity: 1,
+const bounce = {
+  hidden: { scale: 0.9, opacity: 0 },
+  show: {
     scale: 1,
+    opacity: 1,
     transition: {
-      duration: 0.5,
       type: "spring",
-      stiffness: 100,
-    },
-  },
-  hover: {
-    scale: 1.2,
-    rotate: [0, 5, -5, 0],
-    transition: {
-      duration: 0.4,
-      type: "spring",
-      stiffness: 200,
+      stiffness: 120,
+      damping: 10,
     },
   },
 };
+
 
 export function ExpertiseSection() {
   return (
@@ -67,12 +59,13 @@ export function ExpertiseSection() {
           <h2 className="text-4xl font-bold text-[--foreground] text-center">
             Tecnologias e Ferramentas
           </h2>
-          <motion.div className="w-20 h-1 bg-[--foreground] rounded-full"
-          initial={{ scaleX: 0 }}
-          whileInView={{ scaleX: 1 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-          viewport={{ once: true }}
-           />
+          <motion.div
+            className="w-20 h-1 bg-[--foreground] rounded-full"
+            initial={{ scaleX: 0 }}
+            whileInView={{ scaleX: 1 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            viewport={{ once: true }}
+          />
         </motion.div>
 
         <motion.p
@@ -85,16 +78,27 @@ export function ExpertiseSection() {
 
         <motion.div
           className="flex flex-wrap flex-row gap-8 items-center justify-center"
-          variants={container}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+          variants={{
+            hidden: { opacity: 0 },
+            show: {
+              opacity: 1,
+              transition: {
+                staggerChildren: 0.1,
+              },
+            },
+          }}
         >
           {techStacks.map(({ name, imageUrl }) => (
             <motion.div
               key={name}
-              variants={techItem}
-              whileHover="hover"
+              variants={bounce}
+              whileHover={{ scale: 1.1 }}
               className="flex flex-col items-center cursor-pointer group"
             >
-              <div className="p-4 bg-[--background] rounded-xl shadow-lg group-hover:shadow-[--foreground] transition-all duration-300">
+              <div className="p-4 bg-[--background] rounded-xl shadow-md group-hover:shadow-[--foreground] transition-all duration-300">
                 <Image
                   alt={name}
                   width={40}
@@ -125,12 +129,13 @@ export function ExpertiseSection() {
           <h2 className="text-4xl font-bold text-[--foreground] text-center">
             Minhas Especialidades
           </h2>
-          <motion.div className="w-20 h-1 bg-[--foreground] rounded-full"
-          initial={{ scaleX: 0 }}
-          whileInView={{ scaleX: 1 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-          viewport={{ once: true }}
-           />
+          <motion.div
+            className="w-20 h-1 bg-[--foreground] rounded-full"
+            initial={{ scaleX: 0 }}
+            whileInView={{ scaleX: 1 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            viewport={{ once: true }}
+          />
         </motion.div>
 
         <motion.div
@@ -158,7 +163,7 @@ function Expertise({ title, icon, description }: ExpertiseProps) {
   return (
     <motion.div
       whileHover={{ y: -10 }}
-      className="h-full transition-all duration-500 flex flex-col items-center justify-start px-6 py-8 gap-4 bg-[--background] rounded-sm text-center shadow-lg hover:shadow-[--foreground]/20 hover:border-[--foreground]/50"
+      className="h-full transition-all duration-500 flex flex-col items-center justify-start px-6 py-8 gap-4 bg-[--background] rounded-sm text-center shadow-lg hover:shadow-[--foreground] hover:border-[--foreground]"
     >
       <div className="flex flex-col items-center gap-4">
         <div className="p-2 rounded-md text-[--foreground]">{icon}</div>

@@ -57,7 +57,6 @@ export function HeroSection() {
   return (
     <section className="relative flex flex-col items-center justify-center h-[100vh] overflow-hidden  text-white">
       <ParticlesComponent />
-
       <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent backdrop-blur-sm z-0" />
 
       <motion.div
