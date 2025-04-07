@@ -3,7 +3,10 @@ import { BiBriefcaseAlt } from "react-icons/bi";
 import { CiInstagram } from "react-icons/ci";
 
 export const socialMedia = [
-  { href: "https://www.instagram.com/edgar_barrosoneto/", icon: <CiInstagram size={25} /> },
+  {
+    href: "https://www.instagram.com/edgar_barrosoneto/",
+    icon: <CiInstagram size={25} />,
+  },
   { href: "https://github.com/edgar-barroso", icon: <FaGithub size={25} /> },
 ];
 
@@ -89,6 +92,13 @@ export const projectsFront = [
     link: "https://clock-to.vercel.app/",
   },
   {
+    img: "/nextcent.png",
+    title: "NextCent",
+    description:
+      "Landing Page fictícia (Responsive Landing Page Design | Website Home Page Design | Agency Website UI Design (Community))",
+    link: "https://nextcent-fawn.vercel.app/",
+  },
+  {
     img: "/my-followers.png",
     title: "Myfollowers",
     description:
@@ -116,16 +126,13 @@ export const projectsFront = [
       "Meu portfólio profissional, apresentando projetos desenvolvidos, habilidades técnicas e experiências em desenvolvimento web. Explore exemplos práticos de aplicações, interfaces modernas e soluções criativas que demonstram minha paixão por tecnologia e design.",
     link: "/",
   },
-
-
 ];
 
 export const projectsBack = [
   {
     img: "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/nestjs/nestjs-original.svg",
     title: "starter-backend",
-    description:
-      "back-end para iniciar projetos com nest",
+    description: "back-end para iniciar projetos com nest",
     link: "https://github.com/edgar-barroso/starter-backend",
   },
   {
@@ -138,8 +145,7 @@ export const projectsBack = [
   {
     img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-plain.svg",
     title: "Encurtador de URL",
-    description:
-      "API para servico encurtador de URL",
+    description: "API para servico encurtador de URL",
     link: "https://github.com/edgar-barroso/url-shortener-api",
   },
   {
@@ -163,7 +169,6 @@ export const projectsBack = [
       "Back-end para chat web, utilizando websocket, TDD, DDD, SOLID",
     link: "https://github.com/edgar-barroso/web-chat-api",
   },
-
 ];
 
 export const routes = [
