@@ -82,7 +82,7 @@ export const projectsFront = [
     title: "Tatoo Salon",
     description:
       "Landing Page fictícia para estúdio de tatuagem (Tatoo Salon Landing Page UI FREEBIE)",
-    link: "https://thisfollow-gto5zrg9z-edgarbarrosos-projects.vercel.app/",
+    link: "https://tatoo-salon.vercel.app/",
   },
   {
     img: "/netflix.png",
