@@ -57,7 +57,7 @@ export function HeroSection() {
   return (
     <section className="relative flex flex-col items-center justify-center h-[100vh] overflow-hidden  text-white">
       <ParticlesComponent />
-      <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent backdrop-blur-sm z-0" />
+      <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent backdrop-blur-sm z-0" />
 
       <motion.div
         className="relative z-10 flex flex-col gap-6 max-md:items-center max-md:text-center md:max-w-[40%]"
@@ -66,15 +66,15 @@ export function HeroSection() {
         animate="show"
       >
         <motion.div
-          className="flex flex-row items-center gap-2 text-gray-400"
+          className="flex flex-row items-center gap-2 text-foreground"
           variants={helloVariants}
         >
-          <div className="w-6 bg-gray-400 h-[2px]"></div>
+          <div className="w-6 bg-foreground h-[2px]"></div>
           <h2 className="text-2xl font-semibold">HELLO</h2>
         </motion.div>
 
         <motion.h1
-          className="text-6xl font-bold text-center"
+          className="text-6xl font-bold text-center text-[var(--color)]"
           variants={titleVariants}
         >
           {"I'm"} <span className="text-[--foreground]">Edgar</span> Barroso
@@ -95,7 +95,7 @@ export function HeroSection() {
           >
             <Link
               href={item.href}
-              className="hover:text-[--foreground] transition-colors duration-300"
+              className="hover:text-[--foreground] text-[--color] transition-colors duration-300"
             >
               {item.icon}
             </Link>

@@ -54,7 +54,7 @@ const slideInFromLeft: Variants = {
 export function ResumeSection() {
   return (
     <section className="relative py-10 px-4 md:px-[15vw] overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent backdrop-blur-sm -z-10" />
+      <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent backdrop-blur-sm -z-10" />
 
       <motion.div
         className="flex flex-col gap-3 justify-center items-center z-20"
