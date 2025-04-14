@@ -106,6 +106,15 @@ export const projectsFront = [
     link: "https://nextcent-fawn.vercel.app/",
   },
   {
+    img: "/chatgram.png",
+    title: "Chatgram",
+    description:
+      "Chatgram é uma aplicação de chat, utilizando Next.js, TailwindCSS, Postgresql, PrismaORM",
+    link: "https://chatgram-9pnz.vercel.app/",
+  },
+  
+
+  {
     img: "/my-followers.png",
     title: "Myfollowers",
     description:
