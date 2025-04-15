@@ -105,13 +105,13 @@ export const projectsFront = [
       "Landing Page fictícia (Responsive Landing Page Design | Website Home Page Design | Agency Website UI Design (Community))",
     link: "https://nextcent-fawn.vercel.app/",
   },
-  {
-    img: "/chatgram.png",
-    title: "Chatgram",
-    description:
-      "Chatgram é uma aplicação de chat, utilizando Next.js, TailwindCSS, Postgresql, PrismaORM",
-    link: "https://chatgram-9pnz.vercel.app/",
-  },
+    // {
+    //   img: "/chatgram.png",
+    //   title: "Chatgram",
+    //   description:
+    //     "Chatgram é uma aplicação de chat, utilizando Next.js, TailwindCSS, Postgresql, PrismaORM",
+    //   link: "https://chatgram-9pnz.vercel.app/",
+    // },
   
 
   {
