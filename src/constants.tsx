@@ -78,6 +78,13 @@ export const experiences = [
 
 export const projectsFront = [
   {
+    img: "/shop-co.png",
+    title: "Shop.co",
+    description:
+      "Landing Page fictícia para uma loja de roupas (E-commerce Website Template (Freebie) (Community))",
+    link: "https://shop-co-puce.vercel.app/",
+  },
+  {
     img: "/tatoo-salon.png",
     title: "Tatoo Salon",
     description:
