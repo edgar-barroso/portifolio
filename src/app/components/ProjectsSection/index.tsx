@@ -69,7 +69,7 @@ export function ProjectsSection() {
             >
               <Link
                 href={link}
-                className="relative group flex flex-col gap-4 bg-[--background] shadow-md border-2 border-[--background-light] overflow-hidden h-[300px]"
+                className="relative group flex flex-col gap-4 bg-[--background] shadow-md border-2 border-[--background-light] overflow-hidden h-full"
               >
                 <motion.div
                   whileHover={{ scale: 1.1 }}
@@ -128,7 +128,7 @@ export function ProjectsSection() {
             >
               <Link
                 href={link}
-                className="relative group flex flex-col gap-4 bg-[--background] shadow-md border-2 border-[--background-light] overflow-hidden h-[450px] max-md:h-[400px]"
+                className="relative group flex flex-col gap-4 bg-[--background] shadow-md border-2 border-[--background-light] overflow-hidden h-full"
               >
                 <motion.div
                   whileHover={{ scale: 1.1 }}
