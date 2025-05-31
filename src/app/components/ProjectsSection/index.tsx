@@ -69,7 +69,7 @@ export function ProjectsSection() {
             >
               <Link
                 href={link}
-                className="relative group flex flex-col gap-4 bg-[--background] shadow-md border-2 border-[--background-light] overflow-hidden"
+                className="relative group flex flex-col gap-4 bg-[--background] shadow-md border-2 border-[--background-light] overflow-hidden h-[300px]"
               >
                 <motion.div
                   whileHover={{ scale: 1.1 }}
@@ -85,7 +85,7 @@ export function ProjectsSection() {
                 </motion.div>
                 <div className="flex flex-col gap-2 px-4 py-2">
                   <h4 className="font-bold">{title}</h4>
-                  <p className="text-sm">{description}</p>
+                  <p className="text-sm line-clamp-3">{description}</p>
                 </div>
               </Link>
             </motion.div>
@@ -128,7 +128,7 @@ export function ProjectsSection() {
             >
               <Link
                 href={link}
-                className="relative group flex flex-col gap-4 bg-[--background] shadow-md border-2 border-[--background-light] overflow-hidden"
+                className="relative group flex flex-col gap-4 bg-[--background] shadow-md border-2 border-[--background-light] overflow-hidden h-[450px] max-md:h-[400px]"
               >
                 <motion.div
                   whileHover={{ scale: 1.1 }}
@@ -144,7 +144,7 @@ export function ProjectsSection() {
                 </motion.div>
                 <div className="flex flex-col gap-2 px-4 py-2">
                   <h4 className="font-bold">{title}</h4>
-                  <p className="text-sm">{description}</p>
+                  <p className="text-sm line-clamp-3">{description}</p>
                 </div>
               </Link>
             </motion.div>

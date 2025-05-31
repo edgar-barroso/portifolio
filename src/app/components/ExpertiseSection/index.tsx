@@ -41,6 +41,11 @@ const bounce = {
   },
 };
 
+const expertiseDocs: Record<string, string> = {
+  "Desenvolvimento Front-End": "https://react.dev/",
+  "Desenvolvimento Back-End": "https://nodejs.org/en/docs",
+  "Arquitetura de Software": "https://martinfowler.com/architecture/",
+};
 
 export function ExpertiseSection() {
   return (
@@ -91,12 +96,14 @@ export function ExpertiseSection() {
             },
           }}
         >
-          {techStacks.map(({ name, imageUrl }) => (
+          {techStacks.map(({ name, imageUrl, link }) => (
             <motion.div
               key={name}
               variants={bounce}
               whileHover={{ scale: 1.1 }}
               className="flex flex-col items-center cursor-pointer group"
+              onClick={() => link && window.open(link, "_blank")}
+              title={link ? `Ver documentação de ${name}` : undefined}
             >
               <div className="p-4 bg-[--background] rounded-xl shadow-md group-hover:shadow-[--foreground] transition-all duration-300">
                 <Image
@@ -160,10 +167,13 @@ interface ExpertiseProps {
 }
 
 function Expertise({ title, icon, description }: ExpertiseProps) {
+  const docUrl = expertiseDocs[title];
   return (
     <motion.div
       whileHover={{ y: -10 }}
-      className="h-full transition-all duration-500 flex flex-col items-center justify-start px-6 py-8 gap-4 bg-[--background] rounded-sm text-center shadow-lg hover:shadow-[--foreground] hover:border-[--foreground]"
+      className="h-full transition-all duration-500 flex flex-col items-center justify-start px-6 py-8 gap-4 bg-[--background] rounded-sm text-center shadow-lg hover:shadow-[--foreground] hover:border-[--foreground] cursor-pointer"
+      onClick={() => docUrl && window.open(docUrl, "_blank")}
+      title={docUrl ? `Ver documentação de ${title}` : undefined}
     >
       <div className="flex flex-col items-center gap-4">
         <div className="p-2 rounded-md text-[--foreground]">{icon}</div>

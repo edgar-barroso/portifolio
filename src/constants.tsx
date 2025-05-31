@@ -35,28 +35,28 @@ export const educations = [
   {
     interval: "set 2022 - Presente",
     title: "Universidade Estadual Vale do Acaraú - UVA",
-    description: "Bacharelado, Ciênvias da Computação",
+    description: "Bacharelado, Ciências da Computação",
     location: "Sobral - CE",
   },
   {
     interval: "mar 2023",
     title: "Curso de Clean Code e Clean Architecture com Rodrigo Branas",
     description:
-      "Aprenda tudo sobre Clean Code, Refactoring, OO, Test-Driven Development, Hexagonal, Clean Architecture, Domain-Driven Design, SOLID e Design Patterns, do frontend ao backend ",
+      "Conteúdo sobre Clean Code, Refactoring, OO, TDD, Hexagonal, Clean Architecture, DDD, SOLID e Design Patterns, do frontend ao backend.",
     location: "Online",
   },
   {
     interval: "jan 2023",
     title: "Formação em React",
     description:
-      "Aprenda uma das tecnologias mais utilizadas no mercado na prática, do zero ao avançado, construindo interfaces reativas e evolua sua carreira front-end.",
+      "Curso prático de React, do básico ao avançado, com foco em construção de interfaces reativas.",
     location: "Online",
   },
   {
     interval: "jan 2023",
     title: "Formação em Node.js",
     description:
-      "Domine uma linguagem flexível e popular e amplamente utilizada na prática, construindo arquiteturas modernas, eficientes e escaláveis.",
+      "Curso prático de Node.js, com foco em arquiteturas modernas, eficientes e escaláveis.",
     location: "Online",
   },
 ];
@@ -81,72 +81,62 @@ export const projectsFront = [
     img: "/shop-co.png",
     title: "Shop.co",
     description:
-      "Landing Page fictícia para uma loja de roupas (E-commerce Website Template (Freebie) (Community))",
+      "Landing page fictícia para e-commerce de moda, desenvolvida com foco em responsividade, performance e design moderno. Projeto inspirado em templates profissionais do mercado.",
     link: "https://shop-co-puce.vercel.app/",
+  },
+  {
+    img: "/modern-lp.png",
+    title: "Modern Landing Nike (Em Desenvolvimento)",
+    description: "Landing page conceitual para a Nike, utilizando Three.js para animações 3D e React para uma experiência de usuário dinâmica e envolvente.",
+    link: "https://modern-lp-sigma.vercel.app/",
   },
   {
     img: "/tatoo-salon.png",
     title: "Tatoo Salon",
     description:
-      "Landing Page fictícia para estúdio de tatuagem (Tatoo Salon Landing Page UI FREEBIE)",
+      "Landing page para estúdio de tatuagem, com layout moderno, navegação intuitiva e foco em conversão de clientes. Projeto baseado em UI de referência do segmento.",
     link: "https://tatoo-salon.vercel.app/",
   },
   {
     img: "/netflix.png",
-    title: "Netflix clone",
+    title: "Netflix Clone",
     description:
-      "Um clone responsivo da Landing Page da Netflix, recriado com React. Inclui design inspirado na interface original, animações fluidas, e organização das seções como banners, categorias e rodapé.",
+      "Clone responsivo da landing page da Netflix, recriado em React, com animações suaves, organização de seções e atenção à experiência do usuário.",
     link: "https://netflix-nine-plum.vercel.app/",
   },
   {
     img: "/clock-to.png",
     title: "ClockTo",
     description:
-      "Landing Page responsiva para ClockTo, uma empresa fictícia especializada em soluções de checkout de pagamentos rápidas e seguras.",
+      "Landing page institucional para empresa fictícia de soluções de pagamento, com design limpo, responsivo e foco em apresentação de serviços.",
     link: "https://clock-to.vercel.app/",
   },
   {
     img: "/nextcent.png",
     title: "NextCent",
     description:
-      "Landing Page fictícia (Responsive Landing Page Design | Website Home Page Design | Agency Website UI Design (Community))",
+      "Landing page para agência digital, desenvolvida com práticas modernas de UI/UX, responsividade e performance, baseada em design de referência internacional.",
     link: "https://nextcent-fawn.vercel.app/",
-  },
-    // {
-    //   img: "/chatgram.png",
-    //   title: "Chatgram",
-    //   description:
-    //     "Chatgram é uma aplicação de chat, utilizando Next.js, TailwindCSS, Postgresql, PrismaORM",
-    //   link: "https://chatgram-9pnz.vercel.app/",
-    // },
-  
-
-  {
-    img: "/my-followers.png",
-    title: "Myfollowers",
-    description:
-      "Landing Page fictícia para MyFollowers, um serviço de venda de seguidores e engajamento para redes sociais.",
-    link: "https://thisfollow-gto5zrg9z-edgarbarrosos-projects.vercel.app/",
   },
   {
     img: "/nutri-lorenna.png",
     title: "Nutricionista Lorenna",
     description:
-      "Uma Landing Page de vendas de um curso de emagrecimento, da nutricionista Lorenna Lizot.",
+      "Landing page de vendas para curso de emagrecimento, com copy persuasiva, layout otimizado para conversão e integração de formulários.",
     link: "https://www.nutrilorennalizot.com/",
   },
   {
     img: "/fluxograma-fttx.png",
     title: "Fluxograma FTTX",
     description:
-      "Um site para criação de fluxogramas personalizados voltados para projetos FTTx. Com uma interface intuitiva e ferramentas interativas, permite diagramar redes de fibra óptica de forma prática e organizada.",
+      "Aplicação web para criação de fluxogramas personalizados de projetos FTTx, com interface intuitiva, ferramentas interativas e foco em produtividade para profissionais de redes ópticas.",
     link: "https://fluxograma-fttx.vercel.app/",
   },
   {
     img: "/portifolio.png",
-    title: "Portifólio",
+    title: "Portfólio",
     description:
-      "Meu portfólio profissional, apresentando projetos desenvolvidos, habilidades técnicas e experiências em desenvolvimento web. Explore exemplos práticos de aplicações, interfaces modernas e soluções criativas que demonstram minha paixão por tecnologia e design.",
+      "Portfólio profissional apresentando projetos, habilidades técnicas e experiências em desenvolvimento web. Demonstração de interfaces modernas, aplicações práticas e soluções inovadoras.",
     link: "/",
   },
 ];
@@ -154,55 +144,67 @@ export const projectsFront = [
 export const projectsBack = [
   {
     img: "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/nestjs/nestjs-original.svg",
-    title: "starter-backend",
-    description: "back-end para iniciar projetos com nest",
-    link: "https://github.com/edgar-barroso/starter-backend",
+    title: "quick-test",
+    description:
+      "API robusta para sistema de provas online, desenvolvida com Clean Architecture, DDD, TDD e SOLID. Foco em escalabilidade, segurança e manutenibilidade.",
+    link: "https://github.com/edgar-barroso/quicktest-api",
   },
   {
-    img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",
-    title: "Instagram Profile Picture API",
+    img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-plain.svg",
+    title: "Thisfollow API",
     description:
-      "Esta API Python permite que os usuários recuperem o URL de uma imagem de perfil do Instagram fornecendo um nome de usuário.",
-    link: "https://github.com/edgar-barroso/instagram-profile-api",
+      "Back-end para plataforma de venda de seguidores e engajamento em redes sociais, utilizando Node.js, Fastify e PostgreSQL. Estruturado para alta performance e segurança.",
+    link: "https://github.com/edgar-barroso/thisfollow-api",
   },
   {
     img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-plain.svg",
     title: "Encurtador de URL",
-    description: "API para servico encurtador de URL",
+    description: "API para encurtamento de URLs, com endpoints RESTful, validação de dados e arquitetura limpa.",
     link: "https://github.com/edgar-barroso/url-shortener-api",
   },
   {
     img: "/picpay.png",
     title: "Desafio Back-end PicPay",
     description:
-      "Desafio Back-end lançado pelo PicPay para recrutar colaboradores",
+      "API desenvolvida para desafio técnico do PicPay, com foco em boas práticas de arquitetura, testes automatizados e integração de serviços financeiros.",
     link: "https://github.com/edgar-barroso/picpay-desafio-backend",
-  },
-  {
-    img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-plain.svg",
-    title: "E-commerce API",
-    description:
-      "Back-end para um e-commerce desenvolvido no curso do Rodrigo Branas utilizando Clen Architecture, DDD, TDD, SOLID.",
-    link: "https://github.com/edgar-barroso/e-commerce-api",
   },
   {
     img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-plain.svg",
     title: "Web Chat API",
     description:
-      "Back-end para chat web, utilizando websocket, TDD, DDD, SOLID",
+      "Back-end para chat em tempo real, utilizando WebSocket, TDD, DDD e SOLID. Estruturado para escalabilidade e comunicação eficiente.",
     link: "https://github.com/edgar-barroso/web-chat-api",
+  },
+  {
+    img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-plain.svg",
+    title: "E-commerce API",
+    description:
+      "API para e-commerce, desenvolvida com Clean Architecture, DDD, TDD e SOLID. Implementa funcionalidades de catálogo, carrinho e pedidos.",
+    link: "https://github.com/edgar-barroso/e-commerce-api",
+  },
+  {
+    img: "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/nestjs/nestjs-original.svg",
+    title: "starter-backend",
+    description: "Template de back-end com NestJS, configurado para iniciar projetos rapidamente com boas práticas de arquitetura e testes.",
+    link: "https://github.com/edgar-barroso/starter-backend",
+  },
+  {
+    img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",
+    title: "Instagram Profile Picture API",
+    description:
+      "API em Python para obtenção do URL da imagem de perfil do Instagram a partir do nome de usuário, com integração e tratamento de dados.",
+    link: "https://github.com/edgar-barroso/instagram-profile-api",
   },
 ];
 
 export const routes = [
-  { href: "/", name: "home" },
-  // { href: "/about", name: "about" },
-  { href: "https://wa.me/5588998029216", name: "contact" },
+  { href: "/", name: "Home" },
+  { href: "https://wa.me/5588998029216", name: "Contato" },
 ];
 
 export const languages = [
-  // { id: "en", name: "eng" },
-  { id: "pt-br", name: "port" },
+  { id: "pt-br", name: "Português" },
 ];
 
 export const techStacks = [
@@ -210,60 +212,72 @@ export const techStacks = [
     name: "Javascript",
     imageUrl:
       "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg",
+    link: "https://developer.mozilla.org/docs/Web/JavaScript",
   },
   {
     name: "Typescript",
     imageUrl:
       "https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-plain.svg",
+    link: "https://www.typescriptlang.org/docs/",
   },
   {
     name: "Nodejs",
     imageUrl:
       "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-plain.svg",
+    link: "https://nodejs.org/en/docs",
   },
   {
     name: "HTML",
     imageUrl:
       "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg",
+    link: "https://developer.mozilla.org/docs/Web/HTML",
   },
   {
     name: "CSS",
     imageUrl:
       "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg",
+    link: "https://developer.mozilla.org/docs/Web/CSS",
   },
   {
     name: "Python",
     imageUrl:
       "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",
+    link: "https://docs.python.org/3/",
   },
   {
     name: "React",
     imageUrl:
       "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/react/react-original.svg",
+    link: "https://react.dev/",
   },
   {
     name: "Nextjs",
     imageUrl:
       "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/nextjs/nextjs-original.svg",
+    link: "https://nextjs.org/docs",
   },
   {
     name: "Nestjs",
     imageUrl:
       "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/nestjs/nestjs-original.svg",
+    link: "https://docs.nestjs.com/",
   },
   {
     name: "PrismaORM",
     imageUrl:
       "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/prisma/prisma-original.svg",
+    link: "https://www.prisma.io/docs",
   },
   {
     name: "Postgresql",
     imageUrl:
       "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/postgresql/postgresql-original.svg",
+    link: "https://www.postgresql.org/docs/",
   },
   {
     name: "Tailwindcss",
     imageUrl:
       "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/tailwindcss/tailwindcss-original.svg",
+    link: "https://tailwindcss.com/docs",
   },
 ];
