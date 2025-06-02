@@ -1,8 +1,8 @@
 "use client";
 import Link from "next/link";
 import { socialMedia } from "@/constants";
-import { ParticlesComponent } from "../ParticlesComponent";
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 
 const container = {
   hidden: { opacity: 0 },
@@ -54,11 +54,22 @@ const socialItem = {
 };
 
 export function HeroSection() {
+  const fullName = "I'm Edgar Barroso";
+  const [typedName, setTypedName] = useState("");
+
+  useEffect(() => {
+    let current = 0;
+    const interval = setInterval(() => {
+      setTypedName(fullName.slice(0, current + 1));
+      current++;
+      if (current === fullName.length) clearInterval(interval);
+    }, 80);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section className="relative flex flex-col items-center justify-center h-[100vh] overflow-hidden  text-white">
-      <ParticlesComponent />
-      <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent backdrop-blur-sm z-0" />
-
+      
       <motion.div
         className="relative z-10 flex flex-col gap-6 max-md:items-center max-md:text-center md:max-w-[40%]"
         variants={container}
@@ -74,10 +85,19 @@ export function HeroSection() {
         </motion.div>
 
         <motion.h1
-          className="text-6xl font-bold text-center text-[var(--color)]"
+          className="text-6xl font-bold text-center text-[var(--color)] min-h-[80px]"
           variants={titleVariants}
         >
-          {"I'm"} <span className="text-[--foreground]">Edgar</span> Barroso
+          {typedName.includes("Edgar") ? (
+            <>
+              {typedName.split("Edgar")[0]}
+              <span className="text-[--foreground]">Edgar</span>
+              {typedName.split("Edgar")[1] || ""}
+            </>
+          ) : (
+            typedName
+          )}
+          {!typedName.includes(fullName) && <span className="blinking-cursor">|</span>}
         </motion.h1>
       </motion.div>
 

@@ -27,29 +27,6 @@ const containerVariants: Variants = {
   },
 };
 
-const slideInFromRight: Variants = {
-  hidden: { opacity: 0, x: 50 },
-  visible: {
-    opacity: 1,
-    x: 0,
-    transition: {
-      duration: 0.8,
-      ease: "easeOut",
-    },
-  },
-};
-
-const slideInFromLeft: Variants = {
-  hidden: { opacity: 0, x: -50 },
-  visible: {
-    opacity: 1,
-    x: 0,
-    transition: {
-      duration: 0.8,
-      ease: "easeOut",
-    },
-  },
-};
 
 export function ResumeSection() {
   return (
@@ -94,7 +71,6 @@ export function ResumeSection() {
               <ResumeItem
                 key={education.title}
                 {...education}
-                variants={slideInFromLeft}
               />
             ))}
           </motion.div>
@@ -114,7 +90,6 @@ export function ResumeSection() {
               <ResumeItem
                 key={experience.title}
                 {...experience}
-                variants={slideInFromRight}
               />
             ))}
           </motion.div>

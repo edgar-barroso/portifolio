@@ -10,8 +10,10 @@ const cardVariants = {
     opacity: 1,
     y: 0,
     transition: {
-      duration: 0.6,
-      ease: "easeOut",
+      duration: 1,
+      ease: "easeInOut",
+      type: "spring",
+      bounce: 0.3,
     },
   },
 };
