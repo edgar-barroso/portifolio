@@ -102,7 +102,7 @@ export const projectsFront = [
     title: "Netflix Clone",
     description:
       "Clone responsivo da landing page da Netflix, recriado em React, com animações suaves, organização de seções e atenção à experiência do usuário.",
-    link: "https://netflix-nine-plum.vercel.app/",
+    link: "https://netflix-seven-rose.vercel.app/",
   },
   {
     img: "/clock-to.png",

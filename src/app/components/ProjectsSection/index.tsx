@@ -77,10 +77,10 @@ export function ProjectsSection() {
                 >
                   <Image
                     alt=""
-                    width={1200}
-                    height={1200}
+                    width={600}
+                    height={600}
                     src={img}
-                    className="w-full"
+                    className="w-full aspect-[2/1]"
                   />
                 </motion.div>
                 <div className="flex flex-col gap-2 px-4 py-2">
@@ -136,8 +136,8 @@ export function ProjectsSection() {
                 >
                   <Image
                     alt=""
-                    width={1200}
-                    height={1200}
+                    width={600}
+                    height={600}
                     src={img}
                     className="w-full p-6"
                   />
