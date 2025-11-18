@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: rgb(255, 255, 255);
+  --background-light: rgb(245, 245, 245);
+  --background-dark: rgb(230, 230, 230);
+
+  --foreground: rgb(234, 51, 68);
+  --foreground-light: rgb(244, 102, 120);
+  --foreground-dark: rgb(200, 40, 50);
+  --color:rgba(28, 26, 26, 1);
+}
+
+@media (prefers-color-scheme: dark) {
+
+  :root {
+    --background: rgb(18, 18, 18);
+    --background-light: rgb(30, 30, 30);
+    --background-dark: rgb(10, 10, 10);
+
+    --foreground: rgb(244, 102, 120);
+    --foreground-light: rgb(255, 153, 164);
+    --foreground-dark: rgb(200, 40, 50);
+    --color:rgb(213, 206, 206);
+  }
+}
+
+
+body {
+  color: var(--color);
+  background: var(--background);
+  font-family: "Poppins", sans-serif;
+}
