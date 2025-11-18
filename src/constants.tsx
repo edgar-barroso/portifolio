@@ -77,18 +77,18 @@ export const experiences = [
 ];
 
 export const projectsFront = [
-        {
+  {
     img: "/digital-catalog.png",
     title: "Catalogo Digital",
     description:
-       "Site para catalogo digital de produtos, com interface amigável e navegação intuitiva.",
-    link: "",
+      "Site para catalogo digital de produtos, com interface amigável e navegação intuitiva.",
+    link: "https://github.com/edgar-barroso/digital-catalog",
   },
-      {
+  {
     img: "/pdfante.png",
     title: "PDFante",
     description:
-       "Site para conversão de PDF para PNG e de imagens para PDF, com interface simples e intuitiva.",
+      "Site para conversão de PDF para PNG e de imagens para PDF, com interface simples e intuitiva.",
     link: "https://pdfante.com/pdf-to-png",
   },
   {
@@ -102,7 +102,8 @@ export const projectsFront = [
   {
     img: "/modern-lp.png",
     title: "Modern Landing Nike (Em Desenvolvimento)",
-    description: "Landing page conceitual para a Nike, utilizando Three.js para animações 3D e React para uma experiência de usuário dinâmica e envolvente.",
+    description:
+      "Landing page conceitual para a Nike, utilizando Three.js para animações 3D e React para uma experiência de usuário dinâmica e envolvente.",
     link: "https://modern-lp-sigma.vercel.app/",
   },
   {
@@ -174,7 +175,8 @@ export const projectsBack = [
   {
     img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-plain.svg",
     title: "Encurtador de URL",
-    description: "API para encurtamento de URLs, com endpoints RESTful, validação de dados e arquitetura limpa.",
+    description:
+      "API para encurtamento de URLs, com endpoints RESTful, validação de dados e arquitetura limpa.",
     link: "https://github.com/edgar-barroso/url-shortener-api",
   },
   {
@@ -201,7 +203,8 @@ export const projectsBack = [
   {
     img: "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/nestjs/nestjs-original.svg",
     title: "starter-backend",
-    description: "Template de back-end com NestJS, configurado para iniciar projetos rapidamente com boas práticas de arquitetura e testes.",
+    description:
+      "Template de back-end com NestJS, configurado para iniciar projetos rapidamente com boas práticas de arquitetura e testes.",
     link: "https://github.com/edgar-barroso/starter-backend",
   },
   {
@@ -218,9 +221,7 @@ export const routes = [
   { href: "https://wa.me/5588998029216", name: "Contato" },
 ];
 
-export const languages = [
-  { id: "pt-br", name: "Português" },
-];
+export const languages = [{ id: "pt-br", name: "Português" }];
 
 export const techStacks = [
   {
