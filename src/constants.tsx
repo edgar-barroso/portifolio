@@ -77,6 +77,13 @@ export const experiences = [
 ];
 
 export const projectsFront = [
+    {
+    img: "/eletric-scooter.png",
+    title: "Eletric Scooter",
+    description:
+      "Landing page para empresa fictícia de venda de patinetes elétricos, com design moderno. Projeto baseado em UI de referência do segmento.",
+    link: "https://lp-eletric-scooter-vpi7.vercel.app/",
+  },
   {
     img: "/digital-catalog.png",
     title: "Catalogo Digital",
